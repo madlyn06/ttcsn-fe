@@ -1,0 +1,306 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li,
+a {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.uudai {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tieude {
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.tieude > span {
+  font-size: 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #007295;
+}
+
+.uudai select {
+  border: none;
+  font-size: 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  color: #dba510;
+  transition: transform 0.5s all;
+}
+
+.box {
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.box:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.anh img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+h4 {
+  font-size: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #007295;
+}
+
+.thongtin > span {
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.gia > span {
+  font-size: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: gray;
+}
+
+.gia {
+  margin-top: 35px;
+}
+
+.thanhtien {
+  display: flex;
+}
+
+.thanhtien > span {
+  font-size: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #dba510;
+  font-weight: bolder;
+}
+
+.thanhtien > button {
+  background-color: #dba510;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  margin-left: 40px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.thanhtien > button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.diadiem {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.ndkm {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.boxkm {
+  width: 330px;
+  margin: 30px 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.boxkm img {
+  width: 330px;
+  border-radius: 10px 10px 0px 0px;
+  height: 200px;
+}
+
+.boxkm:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.nd {
+  margin: 10px;
+}
+
+.nd > a {
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  color: #007295;
+}
+
+.nd > a:hover {
+  text-decoration: underline;
+}
+
+.nd > p {
+  font-size: 15px;
+  margin-top: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.khuyenmai {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.tintuc {
+  margin-top: 200px;
+}
+
+.tintuc-nd {
+  display: flex;
+  justify-content: center;
+}
+
+.trai {
+  width: 500px;
+  margin-right: 100px;
+}
+
+.ndtrai {
+  margin: 10px 0px;
+}
+
+.ndtrai > a {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+}
+
+.ndtrai > a:hover {
+  text-decoration: underline;
+}
+
+.ndtrai > p {
+  margin-top: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.trai img {
+  width: 500px;
+}
+
+.phai > ul > li {
+  margin: 0px 20px 0px 0px;
+  border-bottom: 1px solid gray;
+  padding: 15px 0px;
+}
+
+.phai li > a {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.phai li > a:hover {
+  text-decoration: underline;
+}
+
+.square-container {
+  width: 300px; /* Đặt kích thước của hình vuông */
+  height: 300px;
+  overflow: hidden; /* Ngăn chặn nội dung bên ngoài phần tử vuông bị hiển thị */
+}
+
+.inner-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.square-image {
+  width: 100%; /* 100% của chiều rộng của phần tử cha (hình vuông) */
+  height: 100%; /* 100% của chiều cao của phần tử cha (hình vuông) */
+  object-fit: cover; /* Hiển thị toàn bộ hình ảnh trong phần tử mà không bị méo */
+  object-position: center; /* Canh giữa hình ảnh */
+  border-radius: 10px;
+  transition: transform 0.5s ease;
+}
+
+.square-container:hover .square-image {
+  transform: scale(1.2); /* Phóng to 120% so với kích thước ban đầu */
+}
+
+.tentt {
+  position: absolute;
+  top: 200px;
+  padding-left: 20px;
+}
+
+.tentt > h5 {
+  color: white;
+  font-size: 15px;
+  width: 250px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tentt > a {
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tentt > a:hover {
+  text-decoration: underline;
+}
+
+.ttnoibat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.ttnoibat-nd {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.boxtt {
+  margin: 0px 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.vegg {
+  margin-top: 50px;
+}
+
+.vegg-nd {
+  display: flex;
+  justify-content: center;
+}
+
+.vegg-nd > ul > li > a {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.vegg-nd > ul > li {
+  margin: 20px 30px;
+}
+
+.vegg-nd > ul > li:hover a {
+  color: #dba510;
+  text-decoration: underline;
+}

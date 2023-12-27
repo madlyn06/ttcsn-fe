@@ -129,7 +129,7 @@ export default function Header() {
               </div>
             }
           >
-            <div className='text-base'>Xin chào: {profile.username}</div>
+            <div className='text-base'>Xin chào: {profile?.username}</div>
           </Popover>
         ) : (
           <div className='flex gap-3 text-base'>

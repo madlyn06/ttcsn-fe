@@ -33,7 +33,7 @@ function Booking() {
                 />
                 <span className='absolute text-xs top-[17px] left-[70px] z-10'>Bay thẳng</span>
               </div>
-              <span>{item.departure}</span>
+              <span>{item.destination}</span>
             </div>
             <div className='col-span-1 flex flex-col items-center gap-3'>
               <div>

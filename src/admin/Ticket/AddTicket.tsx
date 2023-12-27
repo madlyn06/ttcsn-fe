@@ -83,7 +83,7 @@ export default function AddTicket() {
           />
           <input
             name='price'
-            type='number'
+            type='text'
             value={body.price}
             placeholder='Giá tiền'
             className='py-2 px-3 rounded-md [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none'

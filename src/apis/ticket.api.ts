@@ -1,7 +1,9 @@
 import http from 'src/utills/https'
 interface TicketBody {
   departure: string
+  departure_time: string
   destination: string
+  destination_time: string
   quantity: number
   price: string
   date: number

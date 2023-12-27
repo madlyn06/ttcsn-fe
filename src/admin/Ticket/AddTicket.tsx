@@ -8,7 +8,8 @@ export default function AddTicket() {
   const [body, setBody] = useState({
     departure: '',
     destination: '',
-    quantity: '',
+    departure_time: '',
+    destination_time: '',
     price: '',
     date: 0
   })
@@ -32,8 +33,9 @@ export default function AddTicket() {
     setBody({
       departure: '',
       destination: '',
-      quantity: '' as any,
       price: '' as any,
+      departure_time: '',
+      destination_time: '',
       date: 0
     })
   }
@@ -66,10 +68,18 @@ export default function AddTicket() {
             onChange={handleOnChange}
           />
           <input
-            name='quantity'
-            type='number'
-            value={body.quantity}
-            placeholder='Số lượng vé'
+            name='departure_time'
+            type='string'
+            value={body.departure_time}
+            placeholder='Giờ đi'
+            className='py-2 px-3 rounded-md [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none'
+            onChange={handleOnChange}
+          />
+          <input
+            name='destination_time'
+            type='string'
+            value={body.destination_time}
+            placeholder='Giờ đến'
             className='py-2 px-3 rounded-md [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none'
             onChange={handleOnChange}
           />

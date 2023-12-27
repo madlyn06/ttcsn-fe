@@ -36,22 +36,24 @@ function Ticket() {
         </button>
       </div>
       <div>
-        <ul className='grid grid-cols-6'>
+        <ul className='grid grid-cols-7'>
           <li className='col-span-1'>Điểm đi</li>
           <li className='col-span-1'>Điểm đến</li>
           <li className='col-span-1'>Ngày đi</li>
           <li className='col-span-1'>Giá vé</li>
-          <li className='col-span-1'>Số lượng</li>
+          <li className='col-span-1'>Giờ đi</li>
+          <li className='col-span-1'>Giờ đến</li>
           <li className='col-span-1'>Hành động</li>
         </ul>
         {data?.data?.result.map((item: any, index: any) => (
-          <ul className='grid grid-cols-6 items-center mt-4' key={index}>
-            <li className='col-span-1'>{item.departure}</li>
-            <li className='col-span-1'>{item.destination}</li>
-            <li className='col-span-1'>{formatDate(item.date)}</li>
-            <li className='col-span-1'>{item.price}</li>
-            <li className='col-span-1'>{item.quantity}</li>
-            <li className='col-span-1 flex gap-2'>
+          <ul className='grid grid-cols-7 items-center mt-4' key={index}>
+            <li className='col-span-1 text-sm'>{item.departure}</li>
+            <li className='col-span-1 text-sm'>{item.destination}</li>
+            <li className='col-span-1 text-sm'>{formatDate(item.date)}</li>
+            <li className='col-span-1 text-sm'>{item.price}</li>
+            <li className='col-span-1 text-sm'>{item.departure_time}</li>
+            <li className='col-span-1 text-sm'>{item.destination_time}</li>
+            <li className='col-span-1 flex gap-2 text-sm'>
               <button
                 onClick={() => navigate(`/admin/ticket/update/${item._id}`, { state: { id: item._id } })}
                 className='px-3 py-2 bg-yellow-400 rounded-md text-white'

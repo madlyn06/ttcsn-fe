@@ -9,7 +9,6 @@ function Invoice() {
     queryKey: ['invoice'],
     queryFn: getAllTicket
   })
-  console.log(data)
   //   const navigate = useNavigate()
   const { mutateAsync } = useMutation({
     mutationFn: (id: string) => {
@@ -41,12 +40,12 @@ function Invoice() {
         </ul>
         {data?.data?.result.map((item: any, index: any) => (
           <ul className='grid grid-cols-7 items-center mt-4' key={index}>
-            <li className='col-span-1'>{item.users[0].username}</li>
-            <li className='col-span-1'>{item.users[0].email}</li>
-            <li className='col-span-1'>{item.tickets[0].departure}</li>
-            <li className='col-span-1'>{item.tickets[0].destination}</li>
-            <li className='col-span-1'>{item.status ? 'Đã xác nhận' : 'Chưa xác nhận'}</li>
-            <li className='col-span-1'>{formatDate(item.tickets[0].date)}</li>
+            <li className='col-span-1'>{item?.users[0]?.username}</li>
+            <li className='col-span-1'>{item?.users[0]?.email}</li>
+            <li className='col-span-1'>{item?.tickets[0]?.departure}</li>
+            <li className='col-span-1'>{item?.tickets[0]?.destination}</li>
+            <li className='col-span-1'>{formatDate(item?.tickets[0]?.date)}</li>
+            <li className='col-span-1'>{item?.status ? 'Đã xác nhận' : 'Chưa xác nhận'}</li>
             <li className='col-span-1 flex gap-2'>
               <button onClick={() => handleConfirm(item._id)} className='px-3 py-2 bg-yellow-400 rounded-md text-white'>
                 Xác nhận

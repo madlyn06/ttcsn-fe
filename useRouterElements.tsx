@@ -12,6 +12,8 @@ import User from 'src/admin/User/User'
 import AddUser from 'src/admin/User/AddUser'
 import Booking from 'src/components/Booking'
 import Invoice from 'src/admin/Invoice/Invoice'
+import Pay from 'src/components/Pay'
+import Info from 'src/components/Info'
 const useRouterElements = () => {
   const elements = useRoutes([
     {
@@ -131,6 +133,22 @@ const useRouterElements = () => {
       element: (
         <MainLayout>
           <Booking />
+        </MainLayout>
+      )
+    },
+    {
+      path: 'info',
+      element: (
+        <MainLayout>
+          <Info />
+        </MainLayout>
+      )
+    },
+    {
+      path: 'pay',
+      element: (
+        <MainLayout>
+          <Pay />
         </MainLayout>
       )
     }

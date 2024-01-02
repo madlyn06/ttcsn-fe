@@ -1,0 +1,137 @@
+.nen {
+  background-color: #edeef1;
+  display: flex;
+  justify-content: center;
+}
+
+.thongtin {
+  background-color: white;
+  margin: 20px 10px;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.chi-tiet-ve {
+  background-color: white;
+  margin: 20px 10px;
+  border-radius: 5px;
+  padding: 20px 40px;
+}
+
+.tieude {
+  display: flex;
+  align-items: center;
+}
+
+.tieude svg {
+  width: 30px;
+  height: 30px;
+}
+
+.tieude h3 {
+  color: #007295;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: 15px;
+  font-size: 25px;
+}
+
+.ttck {
+  border: 1px solid #f1f2f6;
+  border-radius: 5px;
+}
+
+.nganhang {
+  background-color: #f1f2f6;
+  padding: 1vh;
+}
+
+.nganhang h4 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0px 4px;
+  font-size: 20px;
+}
+
+.thanhtoan h3 {
+  color: #007295;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.taikhoan {
+  display: flex;
+}
+
+.trai {
+  margin: 0px 10px;
+}
+
+.trai p {
+  color: #007295;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.phai {
+  margin: 0px 10px;
+}
+
+.phai p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.xn {
+  display: flex;
+  justify-content: right;
+}
+
+.xn button {
+  background-color: #007295;
+  color: white;
+  border: none;
+  padding: 10px 10px;
+  margin-top: 10px;
+  border-radius: 3px;
+  display: flex;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.2s ease-in-out;
+}
+
+.xn button:hover {
+  transform: scale(1.1);
+}
+
+.chitiet {
+  border-bottom: 1px solid #007295;
+  border-top: 1px solid #007295;
+}
+
+.chitiet p,
+span,
+h4 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tongtien {
+  display: flex;
+  align-items: center;
+}
+
+.tongtien h4 {
+  color: #007295;
+  font-size: 20px;
+  margin-right: 40px;
+}
+
+.tongtien span {
+  font-size: 20px;
+  font-weight: bold;
+  color: #e5a930;
+}
+
+input:focus {
+  outline: none;
+}
+
+select:focus {
+  outline: none;
+}

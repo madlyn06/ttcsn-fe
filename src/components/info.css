@@ -1,0 +1,163 @@
+.nen {
+  background-color: #edeef1;
+  display: flex;
+  justify-content: center;
+}
+
+.thongtin {
+  background-color: white;
+  margin: 20px 10px;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.chi-tiet-ve {
+  background-color: white;
+  margin: 20px 10px;
+  border-radius: 5px;
+  padding: 20px 40px;
+}
+
+.tieude {
+  display: flex;
+  align-items: center;
+}
+
+.tieude svg {
+  width: 30px;
+  height: 30px;
+}
+
+.tieude h3 {
+  color: #007295;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: 15px;
+  font-size: 25px;
+}
+
+.ten {
+  display: flex;
+}
+
+.quydanh p {
+  color: #007295;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.quydanh select {
+  width: 100px;
+  height: 40px;
+  font-size: 15px;
+  border: 1px solid #007295;
+  border-radius: 5px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-left: 10px;
+}
+
+.hovaten {
+  margin-left: 20px;
+}
+
+.hovaten p {
+  color: #007295;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hovaten input {
+  width: 400px;
+  height: 37px;
+  border-radius: 5px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  border: 1px solid #007295;
+  padding-left: 10px;
+}
+
+.dt p {
+  color: #007295;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dt input {
+  width: 200px;
+  height: 37px;
+  border-radius: 5px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  border: 1px solid #007295;
+  padding-left: 10px;
+}
+
+.yc p {
+  color: #007295;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.yc input {
+  width: 520px;
+  height: 37px;
+  border-radius: 5px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  border: 1px solid #007295;
+  padding-left: 10px;
+}
+
+.tt {
+  display: flex;
+  justify-content: right;
+}
+
+.tt button {
+  background-color: #007295;
+  color: white;
+  border: none;
+  padding: 5px 30px;
+  margin-top: 10px;
+  border-radius: 3px;
+  display: flex;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.2s ease-in-out;
+}
+
+.tt button:hover {
+  transform: scale(1.1);
+}
+
+.chitiet {
+  border-bottom: 1px solid #007295;
+  border-top: 1px solid #007295;
+}
+
+.chitiet p,
+span,
+h4 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tongtien {
+  display: flex;
+  align-items: center;
+}
+
+.tongtien h4 {
+  color: #007295;
+  font-size: 20px;
+  margin-right: 40px;
+}
+
+.tongtien span {
+  font-size: 20px;
+  font-weight: bold;
+  color: #e5a930;
+}
+
+input:focus {
+  outline: none;
+}
+
+select:focus {
+  outline: none;
+}

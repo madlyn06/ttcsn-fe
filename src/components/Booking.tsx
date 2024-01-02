@@ -1,11 +1,12 @@
 import React, { useContext } from 'react'
 import { useMutation } from 'react-query'
-import { useLocation } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 import { invoiceTicket } from 'src/apis/ticket.api'
 import { AppContext } from 'src/context/app.context'
 import { formatDate } from 'src/utills/date'
 
 function Booking() {
+  const navigate = useNavigate()
   const { ticket } = useContext(AppContext)
   const { mutate } = useMutation({
     mutationFn: (id: string) => invoiceTicket(id),
@@ -14,9 +15,9 @@ function Booking() {
     }
   })
   // console.log(ticket)
-  function handleSubmit(id: string) {
-    console.log(id)
-    mutate(id)
+  function handleSubmit(item: any) {
+    // mutate(id)
+    navigate('/info', { state: { item: item } })
   }
   return (
     <div className='bg-[#edeef1] h-full pt-2'>
@@ -50,7 +51,7 @@ function Booking() {
             <div className='col-span-1 flex flex-col items-center justify-end'>
               <p className='text-lg text-[#e5a930] font-semibold'>{item.price} VND</p>
               <div>
-                <button onClick={() => handleSubmit(item._id)} className='px-4 py-2 bg-[#007295] text-white mt-4'>
+                <button onClick={() => handleSubmit(item)} className='px-4 py-2 bg-[#007295] text-white mt-4'>
                   Đặt ngay
                 </button>
               </div>

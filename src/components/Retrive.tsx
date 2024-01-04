@@ -8,12 +8,11 @@ function Retrive() {
     queryKey: ['retrive'],
     queryFn: getAllMyTicket
   })
-  console.log(data)
   return (
     <div className='mx-auto px-4 mt-8 max-w-[800px]'>
       <div className='mb-2'>
         <div className='flex justify-between'>
-          <h1 className='text-[#03121a] font-bold '>Vé của tôi</h1>
+          <h1 className='text-[#03121a] font-bold'>Vé của tôi</h1>
           {/* <p className='text-[#0264c8] text-[14px] font-bold'>Xoá tất cả</p> */}
         </div>
         {data?.data.result.map((item: any, index: any) => (

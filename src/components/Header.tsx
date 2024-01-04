@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import ReactDOM from 'react-dom'
 import Modal from 'react-modal'
 import { useMutation } from 'react-query'
@@ -89,7 +89,7 @@ export default function Header() {
     setProfile(null)
     removeAccessTokenAndProfileFromLS()
   }
-  // html
+  const navigate = useNavigate()
   return (
     <header>
       <div className='logo'>
@@ -126,7 +126,12 @@ export default function Header() {
                 >
                   Đăng xuất
                 </button>
-                <button>Vé của tôi</button>
+                <button
+                  onClick={() => navigate('/retrive')}
+                  className='block w-full text-sm bg-white  text-left hover:bg-slate-100 hover:text-cyan-500'
+                >
+                  Vé của tôi
+                </button>
               </div>
             }
           >

@@ -1,9 +1,10 @@
 import React from 'react'
+import './home.css'
 function Home() {
   return (
     <div className='content'>
       <div className='uudai'>
-        <div className='tieude'>
+        <div className='tieude1'>
           <span>
             <b>Giá Vé Ưu Đãi từ</b>
           </span>
@@ -84,7 +85,7 @@ function Home() {
         </div>
       </div>
       <div className='khuyenmai'>
-        <div className='tieude'>
+        <div className='tieude1'>
           <span>
             <b>Vietnam Airlines khuyến mãi</b>
           </span>
@@ -123,8 +124,8 @@ function Home() {
         </div>
       </div>
       <div className='tintuc'>
-        <div className='tieude'>
-          <span>
+        <div className='tieude1'>
+          <span className='text-center'>
             <b>Tin Tức Mới Nhất</b>
           </span>
         </div>
@@ -170,7 +171,7 @@ function Home() {
         </div>
       </div>
       <div className='ttnoibat'>
-        <div className='tieude'>
+        <div className='tieude1'>
           <span>
             <b>Thông tin nổi bật</b>
           </span>
@@ -221,7 +222,7 @@ function Home() {
         </div>
       </div>
       <div className='vegg'>
-        <div className='tieude'>
+        <div className='tieude1'>
           <span>
             <b>Vé giá rẻ Vietnam Airlines</b>
           </span>

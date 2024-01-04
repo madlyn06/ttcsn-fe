@@ -14,6 +14,7 @@ import Booking from 'src/components/Booking'
 import Invoice from 'src/admin/Invoice/Invoice'
 import Pay from 'src/components/Pay'
 import Info from 'src/components/Info'
+import Retrive from 'src/components/Retrive'
 const useRouterElements = () => {
   const elements = useRoutes([
     {
@@ -149,6 +150,14 @@ const useRouterElements = () => {
       element: (
         <MainLayout>
           <Pay />
+        </MainLayout>
+      )
+    },
+    {
+      path: 'retrive',
+      element: (
+        <MainLayout>
+          <Retrive />
         </MainLayout>
       )
     }

@@ -21,3 +21,4 @@ export const searchTicket = (body: TicketSearch) => http.post('tickets/search', 
 export const invoiceTicket = (id: string) => http.post(`invoices`, { ticket_id: id })
 export const confirmTicket = (id: string) => http.put(`invoices/${id}`)
 export const getAllTicket = () => http.get(`invoices`)
+export const getAllMyTicket = () => http.get(`invoices/my-ticket`)

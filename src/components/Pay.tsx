@@ -1,8 +1,21 @@
-import React from 'react'
+import { useMutation } from 'react-query'
 import './pay.css'
-import { useLocation } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 import { formatDate } from 'src/utills/date'
+import { invoiceTicket } from 'src/apis/ticket.api'
+import { toast } from 'react-toastify'
 function Pay() {
+  const navigate = useNavigate()
+  const { mutate } = useMutation({
+    mutationFn: (id: string) => invoiceTicket(id),
+    onSuccess: (data) => {
+      toast.success('Bạn vui lòng chờ xác nhận vé')
+      navigate('/')
+    },
+    onError: (error) => {
+      toast.error((error as any).response.data.message)
+    }
+  })
   const location = useLocation()
   const { state } = location
   return (
@@ -33,12 +46,12 @@ function Pay() {
                 <p>Công ty cổ phần nhóm 13</p>
                 <p>Chi nhánh Cầu Diễn</p>
                 <p>Thanh toán đơn hàng VNB202400000012</p>
-                <p>1.200.000 VND</p>
+                <p>{state?.item.price} VND</p>
               </div>
             </div>
           </div>
           <div className='xn'>
-            <button>Tôi đã hoàn tất thanh toán</button>
+            <button onClick={() => mutate(state?.item._id)}>Tôi đã hoàn tất thanh toán</button>
           </div>
         </div>
       </div>

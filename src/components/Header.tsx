@@ -119,13 +119,14 @@ export default function Header() {
         {isAuthenticated ? (
           <Popover
             renderPopover={
-              <div className='relative rounded-sm border border-gray-200 bg-white shadow-md'>
+              <div className='relative rounded-sm border border-gray-200 px-4 py-2 bg-white shadow-md'>
                 <button
                   onClick={() => handleLogout()}
-                  className='block w-full bg-white px-4 py-3 text-left hover:bg-slate-100 hover:text-cyan-500'
+                  className='block w-full text-sm bg-white  text-left hover:bg-slate-100 hover:text-cyan-500'
                 >
                   Đăng xuất
                 </button>
+                <button>Vé của tôi</button>
               </div>
             }
           >

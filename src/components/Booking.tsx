@@ -8,12 +8,7 @@ import { formatDate } from 'src/utills/date'
 function Booking() {
   const navigate = useNavigate()
   const { ticket } = useContext(AppContext)
-  const { mutate } = useMutation({
-    mutationFn: (id: string) => invoiceTicket(id),
-    onSuccess: (data) => {
-      console.log(data)
-    }
-  })
+
   // console.log(ticket)
   function handleSubmit(item: any) {
     // mutate(id)

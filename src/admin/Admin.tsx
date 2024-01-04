@@ -5,12 +5,9 @@ export default function Admin({ children }: { children: React.ReactNode }) {
   const navigate = useNavigate()
   return (
     <>
-      <header className='bg-[#1c2930] h-14 flex justify-end'>
-        <div className='w-full ml-20 mt-2' onClick={() => navigate('/')}>
-          <img
-            src='https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/9/97f3e7a54e9c6987283b78e016664776.svg'
-            alt='logo-img'
-          />
+      <header className='bg-[#1c2930] h-14 flex'>
+        <div className='w-40 cursor-pointer' onClick={() => navigate('/')}>
+          <img src='https://www.vietnamairlinesgiare.vn/wp-content/uploads/2023/01/logo_nosub.svg' alt='logo-img' />
         </div>
         <div className='text-white mr-20 cursor-pointer mt-4'>Admin</div>
       </header>
